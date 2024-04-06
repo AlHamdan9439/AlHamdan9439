@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="CADOA, Cadoa Company, RC, Edmond Dantes, technology, network, Rezk Hamdan, Al, cLoad, CLC, Any thing is possible with programming">
+
+  <meta name="description" content="Cadoa company is small project about technology, networks and services. it's has a lot of features for help your in project. Cadoa, any thing is possible with programming">
+  <title>Cadoa</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/Images/ic_cadoa.png" type="image/x-icon">
+  <style>
+
+    #hid {
+      margin: 0 !important;
+      box-shadow: 0 0 5px var(--main-color);
+    }
+
+    #hid:focus {
+      transform: scale(1) !important;
+      box-shadow: 0 0 0 transparent !important;
+    }
+  </style>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMJCW6YDHN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMJCW6YDHN');
+</script>
+
+</head>
+
+<body class="rc">
+  <script src="/load.js"></script>
+
+  <style>
+    div.loading_page {
+      width: 100vw;
+      height: 100vh;
+      z-index: 1422;
+      background-color: var(--background);
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      margin: 0;
+      padding: 1rem;
+      animation-duration: var(--transition);
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      left: 0;
+    }
+
+    div.loading_page.finish {
+      animation-name: finloading;
+    }
+
+    @keyframes finloading {
+      80% {
+        left: -100%;
+      }
+
+      100% {
+        display: none;
+      }
+    }
+  </style>
+  <div id="loadingpage" class="loading_page" style="display: none ">
+    <h1 class="col">RC security</h1>
+    <div class="rc loading">
+    
+   <div class="rc CSV">
+     <div class="rc csv red">6</div>
+     <div class="rc csv green">.</div>
+     <div class="rc csv orange">6</div>
+   </div> 
+    </div>
+    <b>Please, wait</b>
+  </div>
+
+
+
+  <div class="rc navs" id="navs">
+
+  </div>
+
+  <style>
+    @keyframes shsh {
+      from {
+        opacity: 0;
+      }
+
+      80% {
+        opacity: 1.2;
+        gap: 0.4rem;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+
+
+  <div class="cadoa_logo" id="mainlogo" onclick="change_mood()">
+    <img src="Images/cadoa_logo.png" alt="">
+  </div>
+  
+  
+  
+ <div class="spacesidein chon">
+    <div class="rc box bo ma" id="goal">
+      Any thing is possible with programming.
+    </div>
+   
+   <div class="rc box bo" onclick="Move('/libraries/css/')">
+     Version <span class="rc col">6.5</span> Al war
+     <br> with <span class="rc col">CLC</span>
+   </div>
+  
+  </div>
+
+ <script>
+    setTimeout(function() {
+      CLC.write(document.getElementById("goal"), 200);
+    }, 6000);
+ </script>
+ 
+  <!-- ..... -->
+  <section class="ssser">
+    <div class="search">
+      <input type="url" class="rc inp sea" placeholder="Search in web by google" id="search" style="height: 3.6rem !important; font-size: 2.5rem">
+      <button class="rc btn try" id="try">Try</button>
+    </div>
+
+    <div class="btns">
+      <button class="rc btn" onclick="dev()" id="crb" style="opacity: 0.4">
+        Cadoa browser
+      </button>
+      <button class="rc btn" id="btset" onclick="move('settings/')">S</button>
+    </div>
+    <style>
+      .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btns button {
+        margin: 0 !important;
+      }
+
+      .btns #crb {
+        border-start-end-radius: 0;
+        border-end-end-radius: 0;
+        border-right: 0.2rem solid var(--second-cl) !important;
+      }
+
+      .btns #btset {
+        border-end-start-radius: 0;
+        border-start-start-radius: 0;
+        border-left: 0.2rem solid var(--second-col) !important;
+      }
+    </style>
+
+  </section>
+  
+  <style>
+    #ifr {
+      border: 0.2rem var(--main-color) solid;
+      width: 90%;
+      height: 26rem;
+      display: none;
+      position: relative;
+    }
+    .ifrrr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0, 100%);
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--main-color);
+      color: var(--text-col-wh);
+      border-start-start-radius: 2rem;
+      border-end-start-radius: 2rem;
+    }
+  </style>
+  <div class="rc spaceside martb">
+    <iframe id='ifr' src='browser.html' class='rc center'  frameborder='0'></iframe>
+  </div>
+
+  <style>
+    .box.ne {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: nowrap;
+    }
+
+    .box.ne img {
+      width: 7rem;
+      border-radius: 1rem;
+    }
+
+    .box.ne h2 {
+      font-size: 1.6rem;
+    }
+
+    a.rc {
+      text-decoration: none;
+    }
+  </style>
+  
+  
+  <section id="actions">
+    
+  </section>
+  
+  <section id="news" class=""></section>
+  <script>Projects(document.getElementById("news"))</script>
+
+  <section id="projects">
+    <h3 class="rc title form2">projects</h3>
+    <div class="rc box">
+      <div class="rc cards">
+         <a href="/xo-ahmad/" class="rc card">
+          <img src="/Images/xo-ahmad.png" alt="">
+          <div class="details">
+            <b class="col">XO Ahmad</b>
+            <span class="rc cir" style="background-color: var(--cadoa-orange); width: 0.5rem; height: 0.5rem"></span>
+          </div>
+        </a>
+
+        <a href="/libraries/cLoad" class="rc card">
+          <img src="/Images/cLoad.png" alt="">
+          <div class="details">
+            <b class="col">cLoad</b>
+            <span class="rc cir" style="background-color: var(--cadoa-orange); width: 0.5rem; height: 0.5rem">Design</span>
+          </div>
+        </a>
+        <a href="/crazy/" class="rc card">
+          <img src="/Images/cadoa/ForYou.png" alt="">
+          <div class="details">
+            <b class="col">Crazy game</b>
+            <span class="rc cir" style="background-color: var(--cadoa-orange); width: 0.5rem; height: 0.5rem"></span>
+          </div>
+        </a>
+        
+        <a href="/chatadoa" class="rc card">
+          <img src="/Images/cadoa/Errors.png" alt="">
+          <div class="details">
+            <b class="col">Chatadoa</b>
+            <span class="rc cir" style="background-color: var(--main-color); width: 0.5rem; height: 0.5rem"></span>
+          </div>
+        </a>
+        <a href="/Imageadoa/" class="rc card">
+          <img src="/Images/imageadoa.jpg" alt="">
+          <div class="details">
+            <b class="col">Imageadoa</b>
+            <span class="rc cir" style="background-color: var(--cadoa-green); width: 0.5rem; height: 0.5rem"></span>
+          </div>
+        </a>
+
+        <a href="/Twitter/" class="rc card">
+          <img src="/Images/projects/twitter.jpg" alt="">
+          <div class="details">
+            <b class="col">Twitter Form</b>
+          </div>
+        </a>
+
+        <a href="/csfpm" class="rc card">
+          <img src="/Images/projects/CSFMP.jpg" alt="">
+          <div class="details">
+            <b class="col">Management Products</b>
+          </div>
+        </a>
+
+        <a href="/fall/" class="rc card">
+          <img src="/Images/ic_cadoa.png" alt="">
+          <div class="details">
+            <b class="col">First & Last letter game</b>
+          </div>
+        </a>
+
+        <a href="/Token/" class="rc card">
+          <img src="/Images/token.jpg" alt="">
+          <div class="details">
+            <b class="col">Token game</b>
+          </div>
+        </a>
+
+        <a href="/xo-ahmad/" class="rc card">
+          <img src="/Images/xo-ahmad.png" alt="">
+          <div class="details">
+            <b class="col">XO Ahmad</b>
+          </div>
+        </a>
+        <a href="/Apps/cadoa.apk" class="rc card">
+          <img src="/Images/ic_cadoa.png" alt="">
+          <div class="details">
+            <b class="col">Cadoa app</b>
+          </div>
+        </a>
+
+        <a href="/hamdan/" class="rc card">
+          <img src="/Images/projects/hamdan.jpg" alt="">
+          <div class="details">
+            <b class="col">hamdan website</b>
+          </div>
+        </a>
+
+        <a href="/GRA/" class="rc card">
+          <img src="/Images/GRA.png" alt="">
+          <div class="details">
+            <b class="col">Cadoa Writing Game</b>
+          </div>
+        </a>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="libraries">
+    <h3 class="rc title form2">Libraries</h3>
+    <div class="rc box">
+      <div class="rc icons">
+        <a href="/libraries/css/" class="rc icon">
+          <img src="/Images/libraries/css.jpg">
+          <span>CSS</span>
+        </a>
+
+        <a href="/libraries/cLoad/" class="rc icon">
+          <img src="/Images/cLoad.png">
+          <span>cLoad</span>
+        </a>
+        
+        <a href="/libraries/CSV/" class="rc icon">
+          <img src="/Images/csv.png">
+          <span>CSV</span>
+        </a>
+        
+        <a href="/libraries/response/" class="rc icon">
+          <img src="/Images/response.png">
+          <span>CLR</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="rc" style="padding-bottom: 6rem">
+    <h2 class="header">
+      cadoa
+    </h2>
+
+    <a href="About/">Company</a>
+    <a href="mailto: alhamdan9439@gmail.com">Email me</a>
+    <a href="/hamdan">Rezk Hamdan</a>
+    <a href="https://www.facebook.com/edmonddantes7977edmonddantes?mibextid=ZbWKwL">Facebook page</a>
+    <a href="https://youtube.com/@CADOA-xs8hx">YouTube</a>
+
+    <br>
+    <br>
+
+    <a href="support/">support</a>
+
+    <b><span>Rezk Hamdan </span> is working on developing this website. <br> <br>
+      by Cadoa team | رزق حمدان</b>
+
+    <p>00:53 27/06/2023</p>
+  </footer>
+
+
+
+  <script src="JavaScript/main.js"></script>
+  <div class="rc box fast">
+    <a href="/support" class="rc btn center">Support</a>
+  </div>
+  <script>
+    if(localStorage.COPSStatues != "false") {
+      location.pathname = "/cops.html"
+    }
+  </script>
+</body>
+</html>
+
+<!-- <?php
+    $ip = $_SERVER["REMOTE_ADDR"];
+    mkdir("users/" . $ip);
+    
+    file_put_contents('users/' . $ip . "/server", $_SERVER);
+     -->   
